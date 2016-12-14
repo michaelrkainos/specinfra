@@ -1,7 +1,7 @@
 ﻿function FindShare
 {
-  param($shareName)
+  param($name)
   
 
-  Get-WmiObject Win32_Share -filter "Name = '$shareName'"
+  Get-WmiObject Win32_Share -filter "Name = '$name'"
 }
